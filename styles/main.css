@@ -3,6 +3,7 @@
     --fonts: 'Courier New', Courier, monospace;
     /* --main-color: #32363a;   */
     --main-color: black;
+    --hover-box: #202020dd;
     --text-color: #ffffff;
 
 
@@ -19,6 +20,16 @@ body{
     text-align: center;
     color: var(--text-color);
     
+}
+
+#post{
+    background-color: var(--hover-box);
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 300px;
+    border-radius: 20px;
+    padding-top: 20px;
+
 }
 
 .title{
@@ -114,3 +125,4 @@ ul.navbar {
     right: 0;
     margin: auto;
 }
+
