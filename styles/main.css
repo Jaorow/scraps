@@ -1,0 +1,179 @@
+:root{
+    font-family: 'Courier New', Courier, monospace;
+    --fonts: 'Courier New', Courier, monospace;
+    --main-color: #32363a;
+    --main-trans: #21232640;
+    --text-color: #ffffff;
+
+
+    /* nav bar stuff */
+    --nav-hover: #111;
+    --nav-here: orange;
+    /* can change nav-here-hover */
+    --nav-here-hover: #ffa6007e;
+
+}
+
+body{
+    background-color: var(--main-color);
+    text-align: center;
+    color: var(--text-color);
+    
+}
+
+.title{
+    color: orange;
+}
+
+@media only screen and (min-width: 900px) {
+    .body { 
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+  }
+/* hide scroll bar  */
+.hide-bar::-webkit-scrollbar {
+    display: none;
+  }
+
+/* navbar stuff */
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--main-color);
+    }
+
+    .stick {
+        position: sticky;
+        top: 0;
+    }
+
+    li {
+    float: left;
+    }
+
+    li a {
+    display: block;
+    color: var(--text-color);
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    margin-bottom: 10%;
+    
+    }
+
+    li a:hover {
+    background-color: var(--nav-hover);
+    border-radius: 10px;
+    }
+
+    .here {
+    background-color: var(--nav-here);
+    border-radius: 10px;
+    margin: 2px;
+    color: #000;
+    }
+    
+    .here:hover{
+        background-color: var(--nav-here-hover);
+        border-radius: 10px;
+        margin: 2px;
+    }
+    
+    .navbar-Logo{
+        float: right;
+    }
+
+
+
+/* 
+        HERO FLEX BOXING
+*/
+
+.leftTop{    
+    float: left;
+    background-color: var(--main-trans);
+    width: 49%;
+    height:130px;
+    
+}
+.rightTop{
+    float: right;
+    background-color: var(--main-trans);
+    width: 49%;
+    height:130px;
+}
+
+#hero{
+    color: #04AA5C;
+    background-color: var(--main-trans);
+    border-radius: 10px;
+}
+
+/*    FOR MOBILE PHONES TO DISPLAY FLEX BOXES VERTICLY       */
+@media only screen and (max-width: 600px) {
+   
+    .leftTop{    
+
+        float: left;
+        background-color: var(--main-trans);
+        margin-bottom: 10px;
+        
+        width: 100%;
+        height:130px;
+        
+    }
+    .rightTop{
+        float: right;
+        background-color: var(--main-trans);
+        margin-bottom: 10px;
+        width: 100%;
+        height:130px;
+    }
+   
+
+
+  }
+
+
+.statement{
+    padding-top: 135px;
+}
+
+
+#canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+
+/* below is loader... */
+
+
+#loader {
+    border: 12px solid var(--nav-here);
+    border-radius: 50%;
+    border-top: 12px solid #444444;
+    width: 70px;
+    height: 70px;
+    animation: spin 5s linear infinite;
+}
+  
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+  
+.center {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
