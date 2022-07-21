@@ -1,8 +1,8 @@
 :root{
     font-family: 'Courier New', Courier, monospace;
     --fonts: 'Courier New', Courier, monospace;
-    --main-color: #32363a;
-    --main-trans: #21232640;
+    /* --main-color: #32363a;   */
+    --main-color: black;
     --text-color: #ffffff;
 
 
@@ -86,69 +86,6 @@ ul.navbar {
         float: right;
     }
 
-
-
-/* 
-        HERO FLEX BOXING
-*/
-
-.leftTop{    
-    float: left;
-    background-color: var(--main-trans);
-    width: 49%;
-    height:130px;
-    
-}
-.rightTop{
-    float: right;
-    background-color: var(--main-trans);
-    width: 49%;
-    height:130px;
-}
-
-#hero{
-    color: #04AA5C;
-    background-color: var(--main-trans);
-    border-radius: 10px;
-}
-
-/*    FOR MOBILE PHONES TO DISPLAY FLEX BOXES VERTICLY       */
-@media only screen and (max-width: 600px) {
-   
-    .leftTop{    
-
-        float: left;
-        background-color: var(--main-trans);
-        margin-bottom: 10px;
-        
-        width: 100%;
-        height:130px;
-        
-    }
-    .rightTop{
-        float: right;
-        background-color: var(--main-trans);
-        margin-bottom: 10px;
-        width: 100%;
-        height:130px;
-    }
-   
-
-
-  }
-
-
-.statement{
-    padding-top: 135px;
-}
-
-
-#canvas {
-  display: block;
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-}
 
 
 /* below is loader... */
