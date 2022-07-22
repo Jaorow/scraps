@@ -12,7 +12,7 @@
     --nav-hover: #114255;
     --nav-here: #187498;
     /* can change nav-here-hover */
-    --nav-here-hover: #114255;;
+    --nav-here-hover: #114255;
 
 }
 
@@ -106,7 +106,7 @@ ul.navbar {
 #loader {
     border: 12px solid var(--nav-here);
     border-radius: 50%;
-    border-top: 12px solid #444444;
+    border-top: 12px solid var(--background-main);
     width: 70px;
     height: 70px;
     animation: spin 5s linear infinite;
