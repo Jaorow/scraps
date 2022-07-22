@@ -41,8 +41,22 @@ body{
     .body { 
         margin-left: 10%;
         margin-right: 10%;
+
+    }
+    #post{
+        margin-left: 3%;
+        margin-right: 3%;
     }
   }
+
+  /* @media only screen and (max-width: 2000px){
+    #post{
+        max-width: 260px;
+
+    }
+} */
+
+
 /* hide scroll bar  */
 .hide-bar::-webkit-scrollbar {
     display: none;
