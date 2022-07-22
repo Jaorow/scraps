@@ -6,10 +6,10 @@
     --hover-box: #202020dd;
     --text-color: #ffffff;
 
-    --main-color: #187498;
+    --main-color: #F9D923;
 
     /* nav bar stuff */
-    --nav-hover: #114255;
+    --nav-hover: #F9D923;
     --nav-here: #187498;
     /* can change nav-here-hover */
     --nav-here-hover: #114255;
@@ -43,18 +43,22 @@ body{
         margin-right: 10%;
 
     }
-    #post{
-        margin-left: 0%;
-        margin-right: 0%;
-    }
+
   }
 
-  /* @media only screen and (max-width: 2000px){
-    #post{
-        max-width: 260px;
+  /* when its big enough */
+
+/* on phone */
+    @media only screen and (max-width: 320px){
+    
+        #post{
+            margin-left: 5%;
+            margin-right: 5%;
+            
+        
 
     }
-} */
+} 
 
 
 /* hide scroll bar  */
