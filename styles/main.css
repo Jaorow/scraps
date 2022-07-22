@@ -2,21 +2,22 @@
     font-family: 'Courier New', Courier, monospace;
     --fonts: 'Courier New', Courier, monospace;
     /* --main-color: #32363a;   */
-    --main-color: black;
+    --background-main: #36AE7C;
     --hover-box: #202020dd;
     --text-color: #ffffff;
 
+    --main-color: #187498;
 
     /* nav bar stuff */
-    --nav-hover: #111;
-    --nav-here: orange;
+    --nav-hover: #114255;
+    --nav-here: #187498;
     /* can change nav-here-hover */
-    --nav-here-hover: #ffa6007e;
+    --nav-here-hover: #114255;;
 
 }
 
 body{
-    background-color: var(--main-color);
+    background-color: var(--background-main);
     text-align: center;
     color: var(--text-color);
     
@@ -33,7 +34,7 @@ body{
 }
 
 .title{
-    color: orange;
+    color: var(--main-color);
 }
 
 @media only screen and (min-width: 900px) {
@@ -53,7 +54,7 @@ ul.navbar {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: var(--main-color);
+    background-color: var(--background-main);
     }
 
     .stick {
