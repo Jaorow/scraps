@@ -7,3 +7,5 @@ htmlcov
 venv
 *.db
 *.egg-info
+historical/img/.DS_Store
+music/.DS_Store
