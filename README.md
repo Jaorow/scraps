@@ -8,6 +8,8 @@ Scraps is a online architecture trading platform for trading 'scraps' of materia
 - [ ] User profiles
   - [ ] lits of users materials
 - [ ] Post materials function
+  - [ ] Respond with offers
+  - [ ] Remove/Edit materials
 - [ ] Search material via tag of sort
  
 - [ ] total material feed
