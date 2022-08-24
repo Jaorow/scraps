@@ -1,2 +1,0 @@
-# scraps
-Website for scraps
