@@ -12,9 +12,9 @@ import app.adapters.repository as repo
 app_blueprint = Blueprint('app_blueprint', __name__)
 
 @app_blueprint.route('/')
-def root():
+def home():
     return render_template("home.html")
 
-@app_blueprint.route('/')
-def pg2():
-    return render_template("home.html")
+@app_blueprint.route('/trading')
+def trading():
+    return render_template("trading.html")
