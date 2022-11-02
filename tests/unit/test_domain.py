@@ -89,5 +89,18 @@ class TestUser:
         user1 = User(1, 'jamie', 'passsword')
         user1.add_post(Post(1, "Post1", "FirstPost", 1))
         assert str(user1.posts) == "[< Post 1 -- Post1 -- FirstPost >]"
+        p = Post(2, "Post2", "secondPost", 1)
+        user1.add_post(p)
+        assert int(p.post_id) == 2
+        assert str(p) == "< Post 2 -- Post2 -- secondPost >"
+        assert str(user1.posts) == "[< Post 1 -- Post1 -- FirstPost >, < Post 2 -- Post2 -- secondPost >]"
+    
+    def test_removing_post_from_user(self):
+        user1 = User(1, 'jamie', 'passsword')
+        user1.add_post(Post(1, "Post1", "FirstPost", 1))
         user1.add_post(Post(2, "Post2", "secondPost", 1))
-        assert str(user1.posts) == "[< Post 1 -- Post1 -- FirstPost >, < Post 1 -- Post2 -- secondPost >]"
+        assert str(user1.posts) == "[< Post 1 -- Post1 -- FirstPost >, < Post 2 -- Post2 -- secondPost >]"
+        user1.remove_post(Post(1, "Post1", "FirstPost", 1))
+        assert str(user1.posts) == "[< Post 2 -- Post2 -- secondPost >]"
+
+

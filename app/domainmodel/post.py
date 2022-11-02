@@ -11,7 +11,7 @@ class Post:
     maybe add into user as created?
     
     """
-    def __init__(self,post_id:int, Title: str, Description: str, User_id: int) -> None:
+    def __init__(self, post_id:int, Title: str, Description: str, User_id: int) -> None:
         if post_id > 0:
             self.__post_id = post_id
         if User_id > 0:
@@ -56,7 +56,7 @@ class Post:
             pass
 
     def __repr__(self):
-        return f"< Post {self.__user_id} -- {self.__title} -- {self.__description} >"
+        return f"< Post {self.__post_id} -- {self.__title} -- {self.__description} >"
     
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
