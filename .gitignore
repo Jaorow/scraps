@@ -12,4 +12,3 @@ htmlcov
 *.db
 *.egg-info
 *.pyc
-.gitignore
