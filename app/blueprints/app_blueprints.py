@@ -4,8 +4,6 @@ from flask_wtf import FlaskForm
 from wtforms import SubmitField,StringField,SubmitField,TextAreaField, HiddenField, SubmitField,IntegerField
 from wtforms.validators import DataRequired, Length, ValidationError,NumberRange
 
-from better_profanity import profanity
-
 import app.blueprints.services as services
 import app.adapters.repository as repo
 
