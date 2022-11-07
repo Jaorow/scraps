@@ -12,3 +12,4 @@ htmlcov
 *.db
 *.egg-info
 *.pyc
+*__pycache__/*
