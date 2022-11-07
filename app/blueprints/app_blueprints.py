@@ -18,7 +18,7 @@ def home():
     # just gets all at the moment
 
     posts = services.get_posts(start_index, end_index)
-    return render_template("home.html")
+    return render_template("home.html",posts)
 
 @app_blueprint.route('/trading')
 def trading():
