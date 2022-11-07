@@ -2,6 +2,7 @@ import pytest
 import os
 from app.domainmodel.post import Post
 from app.domainmodel.user import User
+from app.adapters.csvdatareader import DataReader
 
 class TestPost:
     def test_construction(self):
@@ -25,6 +26,11 @@ class TestPost:
         post1.description = "Still First Post"
         assert str(post1) == "< Post 1 -- Post1 -- Still First Post >"
     
+
+
+
+
+
 
 class TestUser:
 
@@ -104,3 +110,22 @@ class TestUser:
         assert str(user1.posts) == "[< Post 2 -- Post2 -- secondPost >]"
 
 
+
+
+def create_csv_reader():
+    dirname = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    posts = os.path.join(dirname, 'data/posts.csv')
+    users = os.path.join(dirname, 'data/users.csv')
+    reader = DataReader(posts, users)
+    reader.read()
+    return reader
+
+class TestCsvDataReader:
+
+    def test_setup(self):
+        r = create_csv_reader()
+        assert int(len(r.read_posts())) == 40
+    
+    def test_tracks_reading(self):
+        r = create_csv_reader()
+        assert str(r.get_posts()[0]) == "< Post 1 --  Nice Wood --  wow thats some nice wood youve got there >"

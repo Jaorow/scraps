@@ -21,7 +21,7 @@ def create_app(test_config=None):
 
 
     # Data Path load data
-    data_path = Path('music') / 'adapters' / 'data'
+    data_path = Path('app') / 'adapters' / 'data'
 
     if test_config is not None:
         app.config.from_mapping(test_config)

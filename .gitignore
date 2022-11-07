@@ -1,3 +1,15 @@
 .DS_Store
 .vscode
+__pycashe__
+
+.coverage
+.idea
+.pytest_cache
+.vscode
 __pycache__
+htmlcov
+.venv
+*.db
+*.egg-info
+*.pyc
+*__pycache__/*

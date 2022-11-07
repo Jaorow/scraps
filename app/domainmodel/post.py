@@ -1,4 +1,3 @@
-from requests import post
 from sqlalchemy import desc
 
 
