@@ -26,15 +26,14 @@ class MemoryRepository(AbstractRepository):
     
     def add_posts(self,posts):
         # TODO: this could be whats not working
-        self.add_post(post for post in posts)
+        for post in posts:
+            self.add_post(post)
+
     
-    def get_posts(self,start_index,end_index):
+    def get_posts(self, start_index, end_index):
         return self.__posts[start_index:end_index]
 
-    def get_posts(self,start_index):
-        return self.__posts[start_index:]
-    
-    def get_posts(self):
+    def get_all_posts(self):
         return self.__posts
 
     
@@ -42,7 +41,8 @@ class MemoryRepository(AbstractRepository):
 
 def load_posts(path, repo):
     posts_csv = str(Path(path) / "posts.csv")
-    r = reader(posts_csv)
+    users_csv = str(Path(path) / "users.csv")
+    r = reader(posts_csv,users_csv)
     repo.add_posts(r.read())
 
 def populate(data_path: Path,repo:MemoryRepository):

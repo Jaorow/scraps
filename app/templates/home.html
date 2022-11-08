@@ -10,8 +10,13 @@
 
 </head>
 <body>
-    <h1>EXTENDING LAYOUT as home page</h1>
-
+    {% for post in posts %}
+    <div>
+        <p>{{ post.title }}</p>
+        <p>{{ post.description }}</p>
+        <br><br>
+    </div>
+{% endfor %}
     
 </body>
 </html>

@@ -56,7 +56,7 @@ class DataReader:
                     self.__dataset_of_posts.append(post)
                 self.__posts_dict[post_id] = self.__posts_dict
         
-        return self.__posts_dict
+        return self.__dataset_of_posts
 
 
     def read(self):
