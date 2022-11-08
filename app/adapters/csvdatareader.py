@@ -9,6 +9,9 @@ import ast
 def create_post_object(row):
     "create and return a post object from a row"
     p = Post(int(row['post_id']),row['title'],row['description'],int(row['user_id']))
+    if row['img'] != None:
+        if len(row['img']) > 1:
+            p.img = row['img']
     return p
 class DataReader:
 
