@@ -5,24 +5,27 @@
 <head>
 
     <title>Home</title>
-
     <link rel="stylesheet" href={{ url_for("static", filename="css/home.css")}} />
 
 </head>
 <body>
 
     <!-- cards  -->
-    {% for post in posts %}
+    <section class="cards">
+        
+        {% for post in posts %}
+        
+        <artical class = "card">
+                <img class = "card-img" src="{{ url_for("static", filename="not_found.svg") }}" alt="img" >
+            <div class = "container">
+                <p>{{ post.title }}</p>
+                <p>{{ post.description }}</p>
+            </div>
+        </artical>
+        {% endfor %}
 
-    <div>
-        <img src="{{ url_for("static", filename="not_found.svg") }}" alt="img" style="height: 100px;">
-        <p>{{ post.title }}</p>
-        <p>{{ post.description }}</p>
-        <br><br>
-    </div>
+    </section>
 
-{% endfor %}
-    
 </body>
 </html>
 {% endblock %}
