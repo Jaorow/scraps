@@ -1,9 +1,8 @@
-post_id,title,description,user_id
+post_id,title,description,user_id,img
 1, Nice Wood, wow thats some nice wood youve got there, 1
-2, Hard Steal, this is some really hard steal, 2 
 3, Carbon Rod, A long Stif carbon rod, 1 
 4, Copper Plate, Simply a copper plate, 4
-5, Nice Wood, wow thats some nice wood youve got there, 1
+5, Nice Wood, wow thats some nice wood youve got there, 1,img/wood.jpg
 6, Hard Steal, this is some really hard steal, 2 
 7, Carbon Rod, A long Stif carbon rod, 51
 8, Copper Plate, Simply a copper plate, 2
