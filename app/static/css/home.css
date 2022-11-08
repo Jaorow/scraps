@@ -1,128 +1,37 @@
 :root{
-    font-family: 'Courier New', Courier, monospace;
-    --fonts: 'Courier New', Courier, monospace;
-    /* --main-color: #32363a;   */
-    --background-main: #36AE7C;
-    --hover-box: #202020dd;
-    --text-color: #ffffff;
-
-    --main-color: #F9D923;
-
-    /* nav bar stuff */
-    --nav-hover: #F9D923;
-    --nav-here: #187498;
-    /* can change nav-here-hover */
-    --nav-here-hover: #114255;
+  --card-colour: #64554642;
+  --off-card-colour: #645546;
+  --background-main: #796b5d;
 
 }
-
-
-body{
-    background-color: var(--background-main);
-    text-align: center;
-    color: var(--text-color);
-    
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:space-around;
+	padding: 10px;
 }
 
-#post{
-    background-color: var(--hover-box);
-    margin-left: 20%;
-    margin-right: 20%;
-    height: 210px;
-    border-radius: 20px;
-    padding-top: 20px;
-
-}
-
-.title{
-    color: var(--main-color);
-}
-
-
-
-@media only screen and (min-width: 900px) {
-    .body { 
-        margin-left: 10%;
-        margin-right: 10%;
-
-    }
-
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	border-radius: 5px;
+	transition: 0.3s;
+	flex: 0 1 calc(25% - 1%);
+	margin-bottom: 15px;
+	background-color: var(--card-colour);
   }
 
-/* @media only screen and (min-width: 900px) {
-    #post { 
-        margin-left: 20%;
-        margin-right: 20%;
-
-    }
-
-  } */
-  /* when its big enough */
-
-/* on phone */
-    @media only screen and (max-width: 320px){
-    
-        #post{
-            margin-left: 5%;
-            margin-right: 5%;
-            
-        
-
-    }
-} 
-
-
-/* hide scroll bar  */
-.hide-bar::-webkit-scrollbar {
-    display: none;
+  .card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	background-color: var(--off-card-colour);
   }
 
-/* navbar stuff */
-ul.navbar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: var(--background-main);
-    }
+  .container{
+	padding: 2px 16px;
+  }
 
-    .stick {
-        position: sticky;
-        top: 0;
-    }
-
-    li {
-    float: left;
-    }
-
-    li a {
-    display: block;
-    color: var(--text-color);
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-    margin-bottom: 10%;
-    
-    }
-
-    li a:hover {
-    background-color: var(--nav-hover);
-    border-radius: 10px;
-    }
-
-    .here {
-    background-color: var(--nav-here);
-    border-radius: 10px;
-    margin: 2px;
-    color: #000;
-    }
-    
-    .here:hover{
-        background-color: var(--nav-here-hover);
-        border-radius: 10px;
-        margin: 2px;
-    }
-    
-    .navbar-Logo{
-        float: right;
-    }
+  .card-img{
+	background-color: rgba(131, 119, 98, 0.852);
+	max-width: 300px;
+	margin-top: 5px;
+	border-radius: 5px;
+  }
