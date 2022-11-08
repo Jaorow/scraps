@@ -10,8 +10,18 @@
 
 </head>
 <body>
-    <h1>EXTENDING LAYOUT as home page</h1>
 
+    <!-- cards  -->
+    {% for post in posts %}
+
+    <div>
+        <img src="{{ url_for("static", filename="not_found.svg") }}" alt="img" style="height: 100px;">
+        <p>{{ post.title }}</p>
+        <p>{{ post.description }}</p>
+        <br><br>
+    </div>
+
+{% endfor %}
     
 </body>
 </html>

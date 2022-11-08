@@ -19,6 +19,17 @@ class Post:
             self.__description = Description
         if len(Title) > 0: 
             self.__title = Title
+        
+        self.__img = "not_found.svg"
+
+    @property
+    def img(self) -> str:
+        return self.__img
+
+    @img.setter
+    def img(self, new):
+        if len(new.strip()) > 1:
+            self.__img = new.strip()
 
     @property
     def post_id(self) -> int:

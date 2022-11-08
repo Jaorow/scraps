@@ -29,3 +29,10 @@ _**Scratch that hosted on heroku**_
   - [ ] tags
   - [ ] image link
   
+
+
+
+<!-- if use bootstrap use this -->
+<!-- dominate==2.7.0 -->
+<!-- flask-bootstrap==3.3.7.1 -->
+<!-- visitor==0.1.3 -->
